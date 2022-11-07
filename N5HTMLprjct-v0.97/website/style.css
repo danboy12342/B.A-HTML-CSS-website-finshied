@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+/* font import (might import raleway with 300 or 200 wieght */
+
+* {
+  box-sizing: border-box; /* padding tbc*/
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+/* consdiering not doing this */
+p {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+}
+
+
+/* Header/logo Title */
+.header {
+  padding: 8px;
+  text-align: center;
+  background-position: center;
+  background-size: auto;
+  background-image: url(pk53j4H7_400x400.jpg) ; /*littrely the only image i could find */
+  color: whitesmoke;
+}
+
+.header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;   /*shhhhh */
+}
+
+.navbar a {
+  font-family: Arial , sans-serif;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+
+.navbar a.right {            /* unneeded i know */
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black; /* considring cvfy colored */
+}
+
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.side {            /* unused dont care */ 
+  -ms-flex: 30%;
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  font-family: 'Raleway', sans-serif;
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.credits {
+  padding: 32px;
+  text-align: justify;
+  background-color: lightgray;
+  font-family: "segoe UI";  /* one of these is useless */
+}
+
+.creditsimage {
+  text-align: right;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+
+.social-menu {
+  padding: 20px;
+  text-align: left;
+  background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* table style internal*/
+table {
+  font-family: system-ui, -apple-system; /* look just don't worry about it okay */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid lightgrey;
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  border: 1px solid lightgrey;
+  text-align: left;
+  padding: 10px;
+}
+
+tr {
+  background-color: rgba(211, 211, 211, 0.500);
+}
+
